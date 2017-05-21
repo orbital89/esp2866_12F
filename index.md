@@ -71,7 +71,8 @@ Most esp8266's come with a preloaded firmware called AT. This is a very basic in
     csum 0x2d
     v09f0c112
     ~ld
-    -- Lots of gibberish here.`
+    -- Lots of gibberish here.'
+    
 This is actually a good sign. It means the boot loader has finished and it has loaded the installed program, the baud rate has been changed to 115200 hence the reason you cannot read the output.
 Simply change the serial monitors baud rate to 115200 and reboot the ESP, power off/on.
 
