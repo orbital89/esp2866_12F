@@ -103,7 +103,7 @@ The board should already be installed as above, but you can check by heading int
 Copy the sketch into a new .ino project.
 >
     You can find the .ino file here.... 
-    [ESP8266-Barebone-Example.ino](https://github.com/orbital89/esp2866_tinker/blob/master/ESP8266-Barebone-Example.ino)
+    [ESP8266-Barebone-Example](https://github.com/orbital89/esp2866_tinker/blob/master/ESP8266-Barebone-Example.ino)
 
 Change the two WIFI variables to suit your access point.
 Make sure that the ardunio board is set to "Generic ESP8266 Module".
@@ -173,21 +173,21 @@ Of-course, this can caused by bad PIN setup, but in testing, an underpowered psu
 
 Alternitavly, it may actually get further than that, but then you see...
 
-`ets Jan 8 2013,rst cause:2, boot mode:(3,7)`
+>   ets Jan 8 2013,rst cause:2, boot mode:(3,7)
 
-`load 0x40100000, len 25460, room 16`
-`tail 4`
-`chksum 0x60`
-`load 0x3ffe8000, len 1360, room 4`
-`tail 12`
-`chksum 0x53`
-`ho 0 tail 12 room 4`
-`load 0x3ffe8550, len 10428, room 12`
-`tail 0`
-`chksum 0xb3`
-`csum 0xb3`
-`csum err     `
-`ets_main.c`
+     load 0x40100000, len 25460, room 16
+     tail 4
+     chksum 0x60
+     load 0x3ffe8000, len 1360, room 4
+     tail 12
+     chksum 0x53
+     ho 0 tail 12 room 4
+     load 0x3ffe8550, len 10428, room 12
+     tail 0
+     chksum 0xb3
+     csum 0xb3   
+     csum err        
+     ets_main.c
 
 The good news is that the mere fact that the boot loader is running _some_ output means that it is probabaly OK, so the error isn't too much of a worry (in most cases).
 Again, the first thing to check is your psu as the above error was noted from an underpowered psu (5v 1a).
