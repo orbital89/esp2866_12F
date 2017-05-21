@@ -101,9 +101,9 @@ The board should already be installed as above, but you can check by heading int
 >.   Sketch > Include Library > "Contributed Libraries " > There should be a number of ESP... libraries.
 
 Copy the sketch into a new .ino project.
->
-    You can find the .ino file here.... 
-    [ESP8266-Barebone-Example](https://github.com/orbital89/esp2866_tinker/blob/master/ESP8266-Barebone-Example.ino)
+
+You can find the .ino file here.... 
+[ESP8266-Barebone-Example](ESP8266-Barebone-Example.ino)
 
 Change the two WIFI variables to suit your access point.
 Make sure that the ardunio board is set to "Generic ESP8266 Module".
