@@ -1,6 +1,9 @@
 # Getting started with the esp8266 12F board
 ![](https://i.imgsafe.org/185696f7bf.jpg)
 
+## Introduction
+The ESP8266 comes in many varieties. Most if not all, come on development boards such as the NODEMCU Lua, but these are often too big / complicated for most projects.
+I decided to buy a couple of pure esp8266 12F boards to see what was achieveable with minimum components. I have put together this guide to getting the board online as i found lots of conflicting data out there in terms of pin wiring etc, so hopefully this may be of some help.
 
 ## Wiring up to a breadboard
 Required..
