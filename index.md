@@ -5,18 +5,20 @@
 The ESP8266 comes in many varieties. Most if not all, come on development boards such as the NODEMCU Lua, but these are often too big / complicated for most projects.
 I decided to buy a couple of pure esp8266 12F boards to see what was achieveable with minimum components. I have put together this guide to getting the board online as i found lots of conflicting data out there in terms of pin wiring etc, so hopefully this may be of some help.
 
-## Wiring up to a breadboard
-Required..
+The simple example will take just the ESP board and a onewire temperature sensor to build a simple web server (Plus a few other components)
 
-1.ESP8266 12F
-1.USB to UART board. e.g SiLabs CP2102
-1.Power adapter (12v 1a)
-1.Power supply adapter (To power the breadboard) e.g elego power mb v2. MUST SUPPLY 3.3V NOT 5V
-1.3 10k resistors (used as pull-ups)
-1.Push button
-1.ds18b20 (optional) w/ 4.7k pullup resistor (optional) 
-1.Lots of breadboard wires
-1.Ardunio ide (configured for your USB - UART board) 
+## Wiring up to a breadboard
+The following items will be required..
+
+1. ESP8266 12F
+1. USB to UART board. e.g SiLabs CP2102
+1. Power adapter (12v 1a)
+1. Power supply adapter (To power the breadboard) e.g elego power mb v2. MUST SUPPLY 3.3V NOT 5V
+1. 3 10k resistors (used as pull-ups)
+1. Push button
+1. ds18b20 (optional) w/ 4.7k pullup resistor (optional) 
+1. Lots of breadboard wires
+1. Ardunio ide (configured for your USB - UART board) 
 
 The wiring of this module can very tricky. Firstly, the pitch of the holes means that they do not line up with a standard breadboard. Secondly, they are very small.
 For testing, I found that bending some male breadboard wires around the contacts worked fine.
@@ -89,7 +91,7 @@ If you see the following...
 
 Then congrats, the device is in flash mode and is waiting for that shiny new firmware. You can now let go of the button. (The ESP will remain in this flash mode until it reboots)
 
-You can now either flash your own .ino, or use the example below. This example will turn the ESP into a wifi point, allow you to connect to it and view the temperature readout from the 1 wire sensor on the breadboard.
+You can now either flash your own .ino, or use the example below. This example will connect the ESP to your wifi network and allow you to connect to it to view the temperature readout from the 1 wire sensor on the breadboard.
 
 In order to push this new firmware we need to make sure your Ardunio setup has firstly, the ESP support files and secondly you need to add the OneWire library..
 
