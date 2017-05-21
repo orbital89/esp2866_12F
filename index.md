@@ -1,5 +1,5 @@
 # Getting started with the esp8266 12F board
-![](https://i.imgsafe.org/185696f7bf.jpg)
+![](https://i.imgsafe.org/1b10d02aea.jpeg)
 
 ## Introduction
 The ESP8266 comes in many varieties. Most if not all, come on development boards such as the NODEMCU Lua, but these are often too big / complicated for most projects.
