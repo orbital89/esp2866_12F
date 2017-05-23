@@ -110,7 +110,7 @@ Change the two WIFI variables to suit your access point.
 Make sure that the ardunio board is set to "Generic ESP8266 Module".
 Confirm that your settings are as follows (Your port may be different..)
 
-![](https://i.imgsafe.org/1936fac932.png)
+![](https://ibb.co/cCWMHa)
 
 Click the upload button and watch the status bar, you should see .......................... [31%] etc...
 Once the upload has completed, your sketch may already be running on the ESP but for best practise, turn it off and on again. (Since we are not holding the button down, it will load in normal mode).
